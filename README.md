@@ -3,6 +3,13 @@
 Este repositório é uma iniciativa dos alunos e professores do IPRJ/UERJ no intuito
 de reunir informações relevantes de fontes confiáveis sobre o COVID-19
 
+## Usando este repositório
+
+```bash
+pip install -r requirements.txt
+scrapy runspider scraper/doctorevidence-covidsearch-scraper.py -o file.csv -t csv
+```
+
 ## Objetivo
 Buscar e organizar/agrupar informações sobre publicações contendo decisões/experiências/soluções ligadas à COVID-19.
 
