@@ -7,7 +7,8 @@ de reunir informações relevantes de fontes confiáveis sobre o COVID-19
 
 ```bash
 pip install -r requirements.txt
-scrapy runspider scraper/doctorevidence-covidsearch-scraper.py -o file.csv -t csv
+cd covid_news_scraper/
+scrapy crawl CovidSearchDoctorEvidence -a limit=2 -t csv -o file.csv
 ```
 
 ## Objetivo
