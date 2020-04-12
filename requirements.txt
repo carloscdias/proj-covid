@@ -10,6 +10,8 @@ decorator==4.4.2
 hyperlink==19.0.0
 idna==2.9
 incremental==17.5.0
+ipdb==0.13.2
+ipython==7.13.0
 ipython-genutils==0.2.0
 jedi==0.16.0
 lxml==4.5.0
@@ -28,6 +30,7 @@ Pygments==2.6.1
 PyHamcrest==2.0.2
 pyOpenSSL==19.1.0
 queuelib==1.5.0
+RISparser==0.4.3
 Scrapy==2.0.1
 service-identity==18.1.0
 six==1.14.0
