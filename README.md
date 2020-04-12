@@ -9,6 +9,8 @@ de reunir informações relevantes de fontes confiáveis sobre o COVID-19
 pip install -r requirements.txt
 cd covid_news_scraper/
 scrapy crawl CovidSearchDoctorEvidence -a limit=2 -t csv -o file.csv
+# ou
+scrapy crawl ArchiveItCollection -t csv -o file.csv
 ```
 
 ## Objetivo
