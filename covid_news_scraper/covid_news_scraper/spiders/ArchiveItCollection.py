@@ -34,11 +34,6 @@ class ArchiveItCollectionSpider(scrapy.Spider):
             }
 
         # próxima página
-        next_page = response.css('#pageNext::attr(href)').get()
-        if next_page:
-            yield scrapy.Request(
-                    url = response.urljoin(next_page),
-                    callback = self.parse,
-            )
+        yield from response.follow_all(css = '#pageNext', callback = self.parse)
 
 
