@@ -10,7 +10,7 @@ class WhoIntSpider(scrapy.Spider):
 
     def parse(self, response):
         # link para a página de busca
-        search_page = response.css('a[aria-label="WHO COVID-19 Database"]::attr(href)').get()
+        search_page = response.css('a[aria-label="Search WHO COVID-19 Database"]::attr(href)').get()
         # parâmetros para baixar os resultados da pesquisa num formato simplificado
         # optou-se por ris ao invés de csv porque em csv os dados são entregues incompletos
         params = {
